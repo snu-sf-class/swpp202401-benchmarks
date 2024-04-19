@@ -2,7 +2,7 @@
 
 if [ "$#" -ne 1 ]; then
   echo "build-irgen.sh <clang dir>"
-  echo "ex)  ./build-irgen.sh ~/llvm-swpp/bin"
+  echo "ex)  ./build-irgen.sh ~/llvm-18.1.0/bin"
   exit 1
 fi
 

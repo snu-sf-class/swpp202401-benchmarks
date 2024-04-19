@@ -2,7 +2,7 @@
 
 if [ "$#" -ne 2 ]; then
   echo "c-to-ll.sh <.c file> <clang dir>"
-  echo "ex)  ./c-to-ll.sh ./bubble_sort/src/bubble_sort.c ~/llvm-swpp/bin"
+  echo "ex)  ./c-to-ll.sh ./bubble_sort/src/bubble_sort.c ~/llvm-18.1.0/bin"
   exit 1
 fi
 
