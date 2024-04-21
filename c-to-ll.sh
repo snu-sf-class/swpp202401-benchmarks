@@ -20,6 +20,7 @@ fi
 
 CXX=$2/clang
 set -e
+mkdir -p .tmp
 $CXX -S -emit-llvm $ISYSROOT -O1 -fno-strict-aliasing -fno-discard-value-names -g0 $1 \
-    -mllvm -disable-llvm-optzns -o /tmp/a.ll
-$IRGEN /tmp/a.ll "${1%.c}.ll"
+    -mllvm -disable-llvm-optzns -o .tmp/a.ll
+$IRGEN .tmp/a.ll "${1%.c}.ll"
